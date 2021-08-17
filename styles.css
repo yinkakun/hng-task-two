@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+html,
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  height: 100%;
+  /* background-color: hsla(240, 9%, 13%, 1); */
+  color: hsla(7, 100%, 95%, 1);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+canvas {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80ch;
+  padding: 1rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.orange {
+  color: #fe8277;
+}
+
+.yellow {
+  color: #f4e409;
+}
+
+.pink {
+  color: #bdb2ff;
+}
+
+.darkpink {
+  color: #ffadad;
+}
+
+.sienna {
+  color: #ee6c4d;
+}
+
+.green {
+  color: #7bf1a8;
+}
+
+.blue {
+  color: #90f1ef;
+}
+
+.grey {
+  color: #adb5bd;
+}
+
+.heading-2,
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #90f1ef;
+  cursor: pointer;
+}
+
+.image-container {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  z-index: 2;
+  transform: translateY(50%);
+  filter: grayscale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.image-container:hover {
+  filter: grayscale(0);
+}
+
+img {
+  border-radius: 50%;
+}
