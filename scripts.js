@@ -73,7 +73,7 @@ tsParticles.load('tsparticles', {
   },
   detectRetina: true,
   background: {
-    color: 'hsla(240, 9%, 13%, 1)',
+    // color: 'hsla(240, 9%, 13%, 1)',
   },
   emitters: {
     direction: 'none',
