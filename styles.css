@@ -103,6 +103,7 @@ canvas {
   padding-bottom: 2rem;
   padding-top: 2rem;
   overflow-y: auto;
+  position: relative;
 }
 
 .image-container {
